@@ -6,7 +6,7 @@ use yii\web\Response;
 
 $statusCode = 200;
 
-if (isset($panel->data['statusCode']{
+if (isset($panel->data['statusCode'])){
     $statusCode = $panel->data['statusCode'];
 }
 
