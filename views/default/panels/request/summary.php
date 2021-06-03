@@ -4,10 +4,12 @@
 use yii\helpers\Html;
 use yii\web\Response;
 
-$statusCode = $panel->data['statusCode'];
-if ($statusCode === null) {
-    $statusCode = 200;
+$statusCode = 200;
+
+if (isset($panel->data['statusCode']{
+    $statusCode = $panel->data['statusCode'];
 }
+
 if ($statusCode >= 200 && $statusCode < 300) {
     $class = 'yii-debug-toolbar__label_success';
 } elseif ($statusCode >= 300 && $statusCode < 400) {
